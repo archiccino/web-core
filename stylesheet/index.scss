@@ -1,0 +1,29 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+@import "partials/typography";
+@import "partials/animate";
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.3s ease; // Calling theme function without specifying $key:
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-mono-regular; // Monospace font
+	background-color: theme(background); // Matte black background
+	color: theme(text); // White text
+	line-height: 1.6;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 2em 1em;
+	overflow-x: hidden;
+}
+
+.intro-img {
+	max-width: 400px;
+	border-radius: 10px;
+}
